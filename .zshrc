@@ -114,6 +114,7 @@ alias yabai="brew services restart yabai"
 #Open iCloud from terminal
 alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 
+
 #Push to git in 1 line with custom message from initialized repo
 function push() {
     git add .
@@ -138,6 +139,12 @@ function updatey {
     brew services stop yabai
     brew upgrade yabai
     brew services start yabai
+}
+
+#update scripting addition for yabai
+function updateys {
+    sudo yabai --uninstall-sa
+    sudo yabai --install-sa
 }
 
 #move dotfiles from home to dotfiles folder
