@@ -132,3 +132,15 @@ function code {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+#Stop yabai, update yabai, restart yabai
+function update_yabai {
+    brew services stop yabai
+    brew upgrade yabai
+    brew services start yabai
+}
+
+#move dotfiles from home to dotfiles folder
+function movedots {
+    cp .zshrc dotfiles/
+}
