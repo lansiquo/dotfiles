@@ -134,7 +134,7 @@ function code {
 }
 
 #Stop yabai, update yabai, restart yabai
-function update_yabai {
+function updatey {
     brew services stop yabai
     brew upgrade yabai
     brew services start yabai
