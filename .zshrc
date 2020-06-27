@@ -101,18 +101,21 @@ source $ZSH/oh-my-zsh.sh
 #Robin's Profile
 #Updated June 18th 2020
 alias openrc="code ~/.zshrc" #opens current main config file 
-alias saverc="source ~/.zshrc" #source main config file
+alias loadrc="source ~/.zshrc" #source main config file
 
 #Local servers
 #Updated 18/06/20
 alias lyr.local="ssh root@192.168.2.78"
-alias mysql="/usr/local/mysql/bin/mysql -u root -p"
+alias gearbotmysql="/usr/local/mysql/bin/mysql -u root -p"
 
 #Restart yabai (windows manager)
 alias yabai="brew services restart yabai"
 
 #Open iCloud from terminal
-alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
+alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/" 
+alias openwebsite="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/lansiquo_github"
+alias opengearbot="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/discord-oauth2"
+  
 
 
 #Push to git in 1 line with custom message from initialized repo
@@ -135,10 +138,10 @@ function code {
 }
 
 #Stop yabai, update yabai, restart yabai
-function updatey {
+function updateyabai {
     brew services stop yabai
     brew upgrade yabai
-    brew services start yabai
+    brew services start yabai   
 }
 
 #update scripting addition for yabai
