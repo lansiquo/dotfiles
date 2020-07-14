@@ -109,12 +109,12 @@ alias lyr.local="ssh root@192.168.2.78"
 alias gearbotmysql="/usr/local/mysql/bin/mysql -u root -p"
 
 #Restart yabai (windows manager)
-alias yabai="brew services restart yabai"
+alias restartyabai="brew services restart yabai"
 
 #Open iCloud from terminal
 alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/" 
 alias openwebsite="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/lansiquo_github"
-alias opengearbot="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/discord-oauth2"
+alias opengearbot="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/gearbot"
   
 
 
