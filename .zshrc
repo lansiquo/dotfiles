@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/robinlansiquot/.oh-my-zsh"
+export PATH=/Users/robinlansiquot/downloads/instantclient:$PATH
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -108,13 +109,16 @@ alias loadrc="source ~/.zshrc" #source main config file
 alias lyr.local="ssh root@192.168.2.78"
 alias gearbotmysql="/usr/local/mysql/bin/mysql -u root -p"
 
-#Restart yabai (windows manager)
+#Manage yabai (windows manager)
 alias restartyabai="brew services restart yabai"
+alias stopyabai="brew services stop yabai"
+alias startyabai="brew services start yabai"
 
 #Open iCloud from terminal
 alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/" 
 alias openwebsite="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/lansiquo_github"
 alias opengearbot="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/gearbot"
+alias openapi="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/WI_API"
   
 
 
