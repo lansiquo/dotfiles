@@ -105,7 +105,7 @@ alias loadrc="source ~/.zshrc" #source main config file
 
 #Local servers
 #Updated 18/06/20
-alias lyr.local="ssh root@192.168.2.78"
+alias lyr.local="ssh robin@192.168.2.78"
 alias gearbotmysql="/usr/local/mysql/bin/mysql -u root -p"
 
 #Manage yabai (windows manager)
