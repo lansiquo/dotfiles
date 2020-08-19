@@ -147,12 +147,6 @@ function updateyabai {
     brew services start yabai   
 }
 
-#update scripting addition for yabai
-function updateys {
-    sudo yabai --uninstall-sa
-    sudo yabai --install-sa
-}
-
 #move dotfiles from home to dotfiles folder
 function movedots {
     cp .zshrc dotfiles/
