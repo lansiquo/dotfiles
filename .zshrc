@@ -128,6 +128,12 @@ function push() {
     git push origin master
 }
 
+#update yabai payload
+function update_yabai_script {
+sudo yabai --uninstall-sa
+sudo yabai --install-sa
+}
+
 #Open files in VS Code with the alias codeˇTtt
 function code {
     if [[ $# = 0 ]]
