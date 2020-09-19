@@ -109,7 +109,7 @@ alias lyr.local="ssh robin@192.168.2.78"
 alias gearbotmysql="/usr/local/mysql/bin/mysql -u root -p"
 
 #Manage yabai (windows manager)
-alias restartyabai="brew services restart yabai"
+alias ry="brew services restart yabai"
 alias stopyabai="brew services stop yabai"
 alias startyabai="brew services start yabai"
 
