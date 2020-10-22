@@ -156,4 +156,5 @@ function updateyabai {
 #move dotfiles from home to dotfiles folder
 function movedots {
     cp .zshrc dotfiles/
+    cp .skhdrc dotfiles/
 }
