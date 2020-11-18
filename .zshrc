@@ -106,7 +106,7 @@ alias loadrc="source ~/.zshrc" #source main config file
 #Local servers
 #Updated 18/06/20
 alias lyr.local="ssh robin@192.168.2.78"
-alias gearbotmysql="/usr/local/mysql/bin/mysql -u root -p"
+alias gearbotmy:sql="/usr/local/mysql/bin/mysql -u root -p"
 
 #Manage yabai (windows manager)
 alias ry="brew services restart yabai"
@@ -120,7 +120,6 @@ alias opengearbot="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsPr
 alias openapi="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/WI_API"
   
 
-
 #Push to git in 1 line with custom message from initialized repo
 function push() {
     git add .
@@ -129,12 +128,12 @@ function push() {
 }
 
 #update yabai payload
-function update_yabai_script {
+function updateyabaipayload { 
 sudo yabai --uninstall-sa
 sudo yabai --install-sa
 }
 
-#Open files in VS Code with the alias codeˇTtt
+#Open files in VS Code with the alias code
 function code {
     if [[ $# = 0 ]]
     then
@@ -157,4 +156,6 @@ function updateyabai {
 function movedots {
     cp .zshrc dotfiles/
     cp .skhdrc dotfiles/
+    cd dotfiles
+    push new
 }
