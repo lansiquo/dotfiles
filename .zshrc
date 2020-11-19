@@ -128,7 +128,7 @@ function push() {
 }
 
 #update yabai payload
-function updateyabaipayload { 
+function updatescript { 
 sudo yabai --uninstall-sa
 sudo yabai --install-sa
 }
@@ -153,7 +153,7 @@ function updateyabai {
 }
 
 #move dotfiles from home to dotfiles folder
-function movedots {
+function updatedots {
     cp .zshrc dotfiles/
     cp .skhdrc dotfiles/
     cd dotfiles
