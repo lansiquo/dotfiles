@@ -157,5 +157,5 @@ function updatedots {
     cp .zshrc dotfiles/
     cp .skhdrc dotfiles/
     cd dotfiles
-    push new
+    push update
 }
