@@ -153,6 +153,11 @@ function updateyabai {
     brew services start yabai   
 }
 
+function yabaiscript {
+    sudo yabai --load-sa
+    yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+}
+
 #move dotfiles from home to dotfiles folder
 function updatedots {
     cp .zshrc dotfiles/
