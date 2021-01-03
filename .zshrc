@@ -153,7 +153,8 @@ function updateyabai {
     brew services start yabai   
 }
 
-function yabaiscript {
+#Allow for moving spacees
+function yscript {
     sudo yabai --load-sa
     yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 }
