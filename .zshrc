@@ -104,6 +104,18 @@ source $ZSH/oh-my-zsh.sh
 alias openrc="code ~/.zshrc" #opens current main config file 
 alias loadrc="source ~/.zshrc" #source main config file
 
+
+#yardlights
+alias yardon="curl -i -s -k -X $'POST' \
+    -H $'Host: iot.meross.com' -H $'Content-Type: application/json' -H $'Accept: */*' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: close' -H $'AppVersion: 1.0' -H $'User-Agent: MerossWidget/1.0 (iPhone; iOS 14.2; Scale/3.00)' -H $'Accept-Language: en-CA;q=1' -H $'Authorization: Basic 82e6f7a80579e43e8bab4e86e7e256200b66c3ad95e1f190353c1c0a4003f159' -H $'Content-Length: 555' \
+    --data-binary $'{\"nonce\":\"ryxvdjvmncyaspgk\",\"timestamp\":\"1609708298\",\"sign\":\"6550c78e29646e4c28f0fc71656fc53e\",\"params\":\"ewogICJldmVudCIgOiB7CiAgICAiZXZlbnRUeXBlIiA6ICJERVZJQ0VfRVZFTlQiLAogICAgImV2ZW50RGF0YSIgOiB7CiAgICAgICIxNzEyMjEyNTc0OTI5NDI1MTMxMzM0Mjk4ZjEwYThkYiIgOiBbCiAgICAgICAgewogICAgICAgICAgIm5hbWVzcGFjZSIgOiAiQXBwbGlhbmNlLkNvbnRyb2wuVG9nZ2xlIiwKICAgICAgICAgICJtZXRob2QiIDogIlNFVCIsCiAgICAgICAgICAicGF5bG9hZCIgOiB7CiAgICAgICAgICAgICJ0b2dnbGUiIDogewogICAgICAgICAgICAgICJvbm9mZiIgOiAxCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIF0KICAgIH0KICB9Cn0=\"}' \
+    $'https://iot.meross.com/v1/mqtt/event'"
+    
+alias yardoff="curl -i -s -k -X $'POST' \
+    -H $'Host: iot.meross.com' -H $'Content-Type: application/json' -H $'Accept: */*' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: close' -H $'AppVersion: 1.0' -H $'User-Agent: MerossWidget/1.0 (iPhone; iOS 14.2; Scale/3.00)' -H $'Accept-Language: en-CA;q=1' -H $'Authorization: Basic 82e6f7a80579e43e8bab4e86e7e256200b66c3ad95e1f190353c1c0a4003f159' -H $'Content-Length: 555' \
+    --data-binary $'{\"nonce\":\"vcujhkafsjmgyzfd\",\"timestamp\":\"1609712713\",\"sign\":\"92db12aa453206c4948c5633be6d74fe\",\"params\":\"ewogICJldmVudCIgOiB7CiAgICAiZXZlbnRUeXBlIiA6ICJERVZJQ0VfRVZFTlQiLAogICAgImV2ZW50RGF0YSIgOiB7CiAgICAgICIxNzEyMjEyNTc0OTI5NDI1MTMxMzM0Mjk4ZjEwYThkYiIgOiBbCiAgICAgICAgewogICAgICAgICAgIm5hbWVzcGFjZSIgOiAiQXBwbGlhbmNlLkNvbnRyb2wuVG9nZ2xlIiwKICAgICAgICAgICJtZXRob2QiIDogIlNFVCIsCiAgICAgICAgICAicGF5bG9hZCIgOiB7CiAgICAgICAgICAgICJ0b2dnbGUiIDogewogICAgICAgICAgICAgICJvbm9mZiIgOiAwCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIF0KICAgIH0KICB9Cn0=\"}' \
+    $'https://iot.meross.com/v1/mqtt/event'"
+
 #Local servers
 #Updated 18/06/20
 alias lyr.local="ssh robin@192.168.2.78"
@@ -111,8 +123,8 @@ alias gearbotmy:sql="/usr/local/mysql/bin/mysql -u root -p"
 
 #Manage yabai (windows manager)
 alias ry="brew services restart yabai"
-alias stopyabai="brew services stop yabai"
-alias startyabai="brew services start yabai"
+alias stopy="brew services stop yabai"
+alias starty="brew services start yabai"
 
 #Open iCloud from terminal
 alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/" 
@@ -166,3 +178,4 @@ function updatedots {
     cd dotfiles
     push update
 }
+
