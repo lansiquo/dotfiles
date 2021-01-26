@@ -4,6 +4,8 @@
 # Path to your oh-my-zsh installation.
 
 export ZSH="/Users/robinlansiquot/.oh-my-zsh"
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,6 +106,8 @@ source $ZSH/oh-my-zsh.sh
 alias openrc="code ~/.zshrc" #opens current main config file 
 alias loadrc="source ~/.zshrc" #source main config file
 
+#show PID of localhost:8080
+alias 8080="lsof -n -i4TCP:8080"
 
 #yardlights
 alias yardon="curl -i -s -k -X $'POST' \
