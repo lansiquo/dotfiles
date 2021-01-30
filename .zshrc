@@ -181,8 +181,3 @@ function yscript {
 }
 
 
-PATH=/usr/local/bin:/usr/bin:/bin
-rsync -r -t -p -o -g -v --progress --include='/Users/robinlansiquot' --include='.oh-my-zsh' --include='.zshrc' --include='.skhdrc' --exclude='*' -l /Users/robinlansqiuot/ /Users/robinlansiquot/Dev/dotfiles
-cd /Users/robinlansiquot/Dev/dotfiles && git add /Users/robinlansiquot/Dev/dotfiles/. 
-cd /Users/robinlansiquot/Dev/dotfiles && git commit -a -m 'updates everytime I update dotfiles locally' 
-
