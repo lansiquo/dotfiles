@@ -8,7 +8,8 @@ export ZSH="/Users/robinlansiquot/.oh-my-zsh"
 #export LSCOLORS=GxFxCxDxBxegedabagaced
 #crontab has pushed this1
 #crontab has pushed this2
-#crontab has pushed this34
+#crontab has pushed this3
+#crontab has pushed this4
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
