@@ -180,13 +180,9 @@ function yscript {
     yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 }
 
-#move dotfiles from home to dotfiles folder
-function updatedots {
-    cd Users
-    cd robinlansiquot 
-    cp .zshrc dotfiles/
-    cp .skhdrc dotfiles/
-    cd dotfiles
-    push update
-}
+
+PATH=/usr/local/bin:/usr/bin:/bin
+rsync -r -t -p -o -g -v --progress --include='/Users/robinlansiquot' --include='.oh-my-zsh' --include='.zshrc' --include='.skhdrc' --exclude='*' -l /Users/robinlansqiuot/ /Users/robinlansiquot/Dev/dotfiles
+cd /Users/robinlansiquot/Dev/dotfiles && git add /Users/robinlansiquot/Dev/dotfiles/. 
+cd /Users/robinlansiquot/Dev/dotfiles && git commit -a -m 'updates everytime I update dotfiles locally' 
 
