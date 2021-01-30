@@ -3,9 +3,12 @@
 
 # Path to your oh-my-zsh installation.
 
+PS1='%n@%m %~$ '
+
 export ZSH="/Users/robinlansiquot/.oh-my-zsh"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -175,7 +178,7 @@ function updateyabai {
 }
 
 #Allow for moving spacees
-function yscript {
+function yabaiscript {
     sudo yabai --load-sa
     yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 }
