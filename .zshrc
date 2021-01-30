@@ -176,7 +176,7 @@ function updateyabai {
 }
 
 #Allow for moving spacees
-function yabaiscript {
+function yscript {
     sudo yabai --load-sa
     yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 }
