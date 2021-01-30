@@ -132,7 +132,7 @@ alias starty="brew services start yabai"
 
 #Open iCloud from terminal
 alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/" 
-alias openwebsite="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/lansiquo_github"
+
 alias opengearbot="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/gearbot"
 alias openapi="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/WI_API"
   
@@ -141,8 +141,13 @@ alias openapi="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjec
 function push() {
     git add .
     git commit -a -m "$1"
-    git push origin master
+    git push 
 }
+
+fucntion ow(){
+    cd lansiquo.github.io
+    code .
+    }
 
 #update yabai payload
 function updatescript { 
@@ -177,6 +182,8 @@ function yscript {
 
 #move dotfiles from home to dotfiles folder
 function updatedots {
+    cd Users
+    cd robinlansiquot 
     cp .zshrc dotfiles/
     cp .skhdrc dotfiles/
     cd dotfiles
