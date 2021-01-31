@@ -6,6 +6,7 @@
 export ZSH="/Users/robinlansiquot/.oh-my-zsh"
 #export CLICOLOR=1
 #export LSCOLORS=GxFxCxDxBxegedabagaced
+##
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
