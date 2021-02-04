@@ -1,18 +1,25 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 
-export ZSH="/Users/robinlansiquot/.oh-my-zsh"
-
-
+export ZSH="/Users/robin/.oh-my-zsh"
+########################
+#
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-##
 
-ZSH_THEME="dpoggi"
+#Can you see 
+
+ZSH_THEME="crunch"
+#ZSH_THEME="dpoggi"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -139,11 +146,11 @@ alias openapi="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjec
   
 
 #Push to git in 1 line with custom message from initialized repo
-function push() {
-    git add .
-    git commit -a -m "$1"
-    git push 
-}
+#function push() {
+   # git add .
+   # git commit -a -m "$1"
+    #git push 
+#}
 
 fucntion ow(){
     cd lansiquo.github.io
@@ -180,4 +187,3 @@ function yscript {
     sudo yabai --load-sa
     yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 }
-
