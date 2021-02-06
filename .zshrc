@@ -2,6 +2,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+#PogChamp
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
