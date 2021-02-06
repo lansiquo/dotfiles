@@ -144,6 +144,9 @@ source $ZSH/oh-my-zsh.sh
 
 #Robin's Profile
 #Updated June 18th 2020
+
+alias js="bundle exec jekyll serve --livereload"
+
 alias openrc="code ~/.zshrc" #opens current main config file 
 alias loadrc="source ~/.zshrc" #source main config file
 
@@ -220,4 +223,10 @@ function updateyabai {
 function yscript {
     sudo yabai --load-sa
     yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+}
+
+function push {
+    git add .
+    git commit -m "$1"
+    git push
 }
