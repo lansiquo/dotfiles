@@ -1,5 +1,6 @@
 plugins=(git)
 
+export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 #PogChamp
@@ -185,6 +186,7 @@ alias openapi="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjec
 #}
 
 fucntion ow(){
+    cd ~
     cd Development
     code lansiquo.github.io
     }
