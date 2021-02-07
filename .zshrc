@@ -3,7 +3,11 @@ plugins=(git)
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+export PS1='\h:\w \u\$ '
+
 #PogChamp
+
+#ye
 
 # User configuration
 
@@ -145,7 +149,7 @@ source $ZSH/oh-my-zsh.sh
 #Robin's Profile
 #Updated June 18th 2020
 
-alias js="bundle exec jekyll serve --livereload"
+alias bundleserve="bundle exec jekyll serve --livereload"
 
 alias openrc="code ~/.zshrc" #opens current main config file 
 alias loadrc="source ~/.zshrc" #source main config file
