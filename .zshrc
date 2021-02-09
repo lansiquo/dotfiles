@@ -1,15 +1,21 @@
-plugins=(git)
-
 export ZSH=$HOME/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
-
 export PS1='\h:\w \u\$ '
 
-#PogChamp
+plugins=(git)
+#nice prompt after sudo su
 
-#ye
+# Path to your oh-my-zsh installation.
+#export ZSH="/Users/robin/.oh-my-zsh"
 
-# User configuration
+#ZSH_THEME="apple"
+#ZSH_THEME="crunch"
+ZSH_THEME="dpoggi"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
+
+source $ZSH/oh-my-zsh.sh
+
+#prompt start at bottom of window
+#printf '\n%.0s' {1..100}
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -23,7 +29,7 @@ export PS1='\h:\w \u\$ '
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
+# Compilation flags 
 # export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -42,21 +48,13 @@ export PS1='\h:\w \u\$ '
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-
-export ZSH="/Users/robin/.oh-my-zsh"
-
-#Finally hello from crontab
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 
-ZSH_THEME="crunch"
-#ZSH_THEME="dpoggi"
-#ZSH_THEME="powerlevel10k/powerlevel10k"
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -116,9 +114,7 @@ ZSH_THEME="crunch"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -149,7 +145,7 @@ source $ZSH/oh-my-zsh.sh
 #Robin's Profile
 #Updated June 18th 2020
 
-alias bundleserve="bundle exec jekyll serve --livereload"
+alias serve="bundle exec jekyll serve --livereload"
 
 alias openrc="code ~/.zshrc" #opens current main config file 
 alias loadrc="source ~/.zshrc" #source main config file
@@ -172,6 +168,7 @@ alias yardoff="curl -i -s -k -X $'POST' \
 #Updated 18/06/20
 alias lyr.local="ssh robin@192.168.2.78"
 alias gearbotmy:sql="/usr/local/mysql/bin/mysql -u root -p"
+alias python="python3"
 
 #Manage yabai (windows manager)
 alias ry="brew services restart yabai"
@@ -184,14 +181,7 @@ alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias opengearbot="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/gearbot"
 alias openapi="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/WI_API"
   
-
-#Push to git in 1 line with custom message from initialized repo
-#function push() {
-   # git add .
-   # git commit -a -m "$1"
-    #git push 
-#}
-
+#open person website in visual studio code
 fucntion ow(){
     cd ~
     cd Development
@@ -229,6 +219,7 @@ function yscript {
     yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 }
 
+#simple git push
 function push {
     git add .
     git commit -m "$1"
