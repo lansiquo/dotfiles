@@ -145,6 +145,10 @@ source $ZSH/oh-my-zsh.sh
 #Robin's Profile
 #Updated June 18th 2020
 
+#whats my external ip
+alias ip="curl ipecho.net/plain ; echo"
+
+#serve jeykll localhost:4000
 alias serve="bundle exec jekyll serve --livereload"
 
 alias openrc="code ~/.zshrc" #opens current main config file 
@@ -224,4 +228,11 @@ function push {
     git add .
     git commit -m "$1"
     git push
+}
+
+#ssh into ec2 instance
+function ec2 {
+    cd ~ 
+    cd Downloads
+    ssh -i "Keypair.pem" ec2-user@ec2-13-59-38-198.us-east-2.compute.amazonaws.com
 }
