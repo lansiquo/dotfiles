@@ -14,6 +14,9 @@ ZSH_THEME="dpoggi"
 
 source $ZSH/oh-my-zsh.sh
 
+#path for openvpn
+export PATH=$(brew --prefix openvpn)/sbin:$PATH
+
 #prompt start at bottom of window
 #printf '\n%.0s' {1..100}
 
