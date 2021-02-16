@@ -1,6 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
-
+#True
 #export PS1='\h:\w \u\$ '
 
 #path for openvpn
