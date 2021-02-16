@@ -1,5 +1,10 @@
 export ZSH=$HOME/.oh-my-zsh
-export PS1='\h:\w \u\$ '
+
+
+#export PS1='\h:\w \u\$ '
+
+#path for openvpn
+export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
 plugins=(git)
 #nice prompt after sudo su
@@ -14,8 +19,7 @@ ZSH_THEME="dpoggi"
 
 source $ZSH/oh-my-zsh.sh
 
-#path for openvpn
-export PATH=$(brew --prefix openvpn)/sbin:$PATH
+
 
 #prompt start at bottom of window
 #printf '\n%.0s' {1..100}
@@ -147,6 +151,9 @@ export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
 #Robin's Profile
 #Updated June 18th 2020
+
+#flush local DNS
+alias flushdns="sudo killall -HUP mDNSResponder; say dns cleared successfully"
 
 #whats my external ip
 alias ip="curl ipecho.net/plain ; echo"
