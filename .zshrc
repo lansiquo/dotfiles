@@ -244,5 +244,7 @@ function push {
 function ec2 {
     cd ~ 
     cd Downloads
-    ssh -i "Keypair.pem" ec2-user@ec2-3-137-169-221.us-east-2.compute.amazonaws.com
+    ssh -i "Keypair.pem" ec2-user@ec2-18-217-148-146.us-east-2.compute.amazonaws.com
 }
+
+
