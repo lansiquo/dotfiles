@@ -3,6 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 #True
 #export PS1='\h:\w \u\$ '
 
+export PATH="$PATH:/Users/robin/Developer/flutter/bin"
+
 #path for openvpn
 export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
@@ -18,7 +20,6 @@ ZSH_THEME="dpoggi"
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 
 source $ZSH/oh-my-zsh.sh
-
 
 
 #prompt start at bottom of window
