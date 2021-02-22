@@ -1,14 +1,15 @@
 export ZSH=$HOME/.oh-my-zsh
 
-#True
-#export PS1='\h:\w \u\$ '
 
-export PATH="$PATH:/Users/robin/Developer/flutter/bin"
+#True
+export PS1='\h:\w \u\$ '
+
+#export PATH="$PATH:/Users/robin/Developer/flutter/bin"
 
 #path for openvpn
-export PATH=$(brew --prefix openvpn)/sbin:$PATH
+#export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
-plugins=(git)
+#plugins=(git)
 #nice prompt after sudo su
 
 # Path to your oh-my-zsh installation.
@@ -20,7 +21,6 @@ ZSH_THEME="dpoggi"
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 
 source $ZSH/oh-my-zsh.sh
-
 
 #prompt start at bottom of window
 #printf '\n%.0s' {1..100}
@@ -60,9 +60,6 @@ source $ZSH/oh-my-zsh.sh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-
-
-
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
