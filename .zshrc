@@ -1,10 +1,11 @@
 export ZSH=$HOME/.oh-my-zsh
 
+export PATH="$PATH:/Users/robin/Developer/flutter/bin"
 
 #True
 export PS1='\h:\w \u\$ '
 
-#export PATH="$PATH:/Users/robin/Developer/flutter/bin"
+#export PATH="$PATH:/Users/robin/flutter/bin"
 
 #path for openvpn
 #export PATH=$(brew --prefix openvpn)/sbin:$PATH
