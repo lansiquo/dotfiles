@@ -2,6 +2,9 @@ export ZSH=$HOME/.oh-my-zsh
 
 export PATH="$PATH:/Users/robin/Developer/flutter/bin"
 
+JAVA_HOME=/Library/Java/Home
+export JAVA_HOME;
+
 #True
 export PS1='\h:\w \u\$ '
 
