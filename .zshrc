@@ -8,6 +8,19 @@ export JAVA_HOME;
 #True
 export PS1='\h:\w \u\$ '
 
+################################################################
+#For speedy dock
+#defaults write com.apple.dock autohide-delay -int 0
+#defaults write com.apple.dock autohide-time-modifier -float 0  
+#killall Dock
+################################################################
+################################################################
+#Back to normal dock
+#defaults delete com.apple.dock autohide-delay
+#defaults delete com.apple.dock autohide-time-modifier
+#killall Dock
+################################################################
+
 #export PATH="$PATH:/Users/robin/flutter/bin"
 
 #path for openvpn
