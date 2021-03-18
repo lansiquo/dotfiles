@@ -4,14 +4,14 @@
 yabai -m config status_bar                   off
 yabai -m config status_bar_text_font         "Helvetica Neue:Bold:12.0"
 yabai -m config status_bar_icon_font         "FontAwesome:Regular:12.0"
-yabai -m config status_bar_background_color  0xff202020
-yabai -m config status_bar_foreground_color  0xffa8a8a8
-yabai -m config status_bar_space_icon_strip  I II III IV V VI VII VIII IX X
+yabai -m config statp  I II III IV V VI VII VIII IX X
 yabai -m config status_bar_power_icon_strip   
 yabai -m config status_bar_space_icon        
 yabai -m config status_bar_clock_icon        
 
-# global settings
+# global settingsus_bar_background_color  0xff202020
+yabai -m config status_bar_foreground_color  0xffa8a8a8
+yabai -m config status_bar_space_icon_stri
 yabai -m config mouse_follows_focus          off
 yabai -m config focus_follows_mouse          on
 yabai -m config window_placement             second_child
@@ -34,6 +34,22 @@ yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
+
+# Not sure whats going up there
+
+## Yabi rules to not automatically snap include place ##
+
+#yabai -m rule --add app="^App" layer=above manage=off
+yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Terminal$" manage=off
+yabai -m rule --add app="^Notion$" manage=off
+yabai -m rule --add app="^Discord$" manage=off
+yabai -m rule --add app="^Finder$" layer=above manage=off
+yabai -m rule --add app="^Visual Studio Code$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+
+# Not sure whats going down there
 
 # general space settings
 yabai -m config layout                       bsp

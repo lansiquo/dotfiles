@@ -1,6 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
-export PATH="$PATH:/Users/robin/Developer/flutter/bin"
+# export PATH="$PATH:/Users/robin/Developer/flutter/bin"
 
 JAVA_HOME=/Library/Java/Home
 export JAVA_HOME;
@@ -176,6 +176,7 @@ alias ip="curl ipecho.net/plain ; echo"
 #serve jeykll localhost:4000
 alias serve="bundle exec jekyll serve --livereload"
 
+
 alias openrc="code ~/.zshrc" #opens current main config file 
 alias loadrc="source ~/.zshrc" #source main config file
 
@@ -262,4 +263,7 @@ function ec2 {
     ssh -i "Keypair.pem" ec2-user@ec2-18-217-148-146.us-east-2.compute.amazonaws.com
 }
 
-
+function openyabai {
+    cd ~
+    code .yabairc
+}
