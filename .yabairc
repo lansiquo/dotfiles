@@ -41,14 +41,18 @@ yabai -m config mouse_action2                resize
 
 #yabai -m rule --add app="^App" layer=above manage=off
 yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Calendar$" manage=off
+yabai -m rule --add app="^Code$" manage=off
 yabai -m rule --add app="^Terminal$" manage=off
 yabai -m rule --add app="^Notion$" manage=off
 yabai -m rule --add app="^Discord$" manage=off
 yabai -m rule --add app="^Finder$" layer=above manage=off
-yabai -m rule --add app="^Visual Studio Code$" manage=off
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Messages$" manage=off
 yabai -m rule --add app="^VMware Fusion$" manage=off
+yabai -m rule --add app="^App Store$" manage=off
+yabai -m rule --add app="^Speedtest$" manage=off
+
 
 # Not sure whats going down there
 
