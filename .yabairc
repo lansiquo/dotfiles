@@ -52,6 +52,9 @@ yabai -m rule --add app="^Messages$" manage=off
 yabai -m rule --add app="^VMware Fusion$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Speedtest$" manage=off
+yabai -m rule --add app="^Simulator$" manage=off
+yabai -m rule --add app="^WhatsApp$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
 
 
 # Not sure whats going down there

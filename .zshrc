@@ -8,6 +8,10 @@ export JAVA_HOME;
 #True
 export PS1='\h:\w \u\$ '
 
+#Enable / Disable repeated keys
+#defaults write -g ApplePressAndHoldEnabled -bool false
+#defaults write -g ApplePressAndHoldEnabled -bool true
+
 ################################################################
 #For speedy dock
 #defaults write com.apple.dock autohide-delay -int 0
