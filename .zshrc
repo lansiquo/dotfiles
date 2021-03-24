@@ -2,8 +2,10 @@ export ZSH=$HOME/.oh-my-zsh
 
 # export PATH="$PATH:/Users/robin/Developer/flutter/bin"
 
-JAVA_HOME=/Library/Java/Home
-export JAVA_HOME;
+#JAVA_HOME=/Library/Java/Home
+#export JAVA_HOME;
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 #True
 export PS1='\h:\w \u\$ '
