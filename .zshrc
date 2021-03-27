@@ -1,6 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # export PATH="$PATH:/Users/robin/Developer/flutter/bin"
+export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
 #JAVA_HOME=/Library/Java/Home
 #export JAVA_HOME;
