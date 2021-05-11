@@ -203,8 +203,8 @@ alias yardoff="curl -i -s -k -X $'POST' \
 
 #Local servers
 #Updated 18/06/20
-alias lyr.local="ssh robin@192.168.2.78"
 alias tp="ssh robin@192.168.2.74"
+alias oldmp="ssh robinlansiquot@192.168.2.197"
 alias gearbotmy:sql="/usr/local/mysql/bin/mysql -u root -p"
 alias python="python3"
 
