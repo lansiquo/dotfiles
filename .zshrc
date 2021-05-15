@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # export PATH="$PATH:/Users/robin/Developer/flutter/bin"
-export PATH=$(brew --prefix openvpn)/sbin:$PATH
+# export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
 #JAVA_HOME=/Library/Java/Home
 #export JAVA_HOME;
@@ -275,3 +275,9 @@ function openyabai {
     cd ~
     code .yabairc
 }
+
+function battemp() { 
+    
+    echo 'bc <<< "scale=3; `ioreg -r -n AppleSmartBattery | grep Temperature | cut -c23-`/100*1.8+32" ; }' >> ~/.zshrc && source
+
+}bc <<< "scale=3; `ioreg -r -n AppleSmartBattery | grep Temperature | cut -c23-`/100*1.8+32" ; }

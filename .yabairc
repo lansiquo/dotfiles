@@ -39,13 +39,13 @@ yabai -m config mouse_action2                resize
 
 # Not sure whats going up there
 
-## Yabi rules to not automatically snap include place ##
+# Yabi rules to not automatically snap include place ##
 
-#yabai -m rule --add app="^App" layer=above manage=off
+# yabai -m rule --add app="^App" layer=above manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Calendar$" manage=off
 yabai -m rule --add app="^Code$" manage=off
-yabai -m rule --add app="^Terminal$" manage=off
+yabai -m rule --add app="^Terminal$" manage=on
 yabai -m rule --add app="^Notion$" manage=off
 yabai -m rule --add app="^Discord$" manage=off
 yabai -m rule --add app="^Finder$" layer=above manage=off
