@@ -43,7 +43,7 @@ yabai -m config mouse_action2                resize
 
 # yabai -m rule --add app="^App" layer=above manage=off
 yabai -m rule --add app="^Spotify$" manage=off
-yabai -m rule --add app="^Calendar$" manage=off
+# yabai -m rule --add app="^Calendar$" manage=off
 yabai -m rule --add app="^Code$" manage=off
 yabai -m rule --add app="^Terminal$" manage=off
 yabai -m rule --add app="^Notion$" manage=off
