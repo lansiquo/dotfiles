@@ -276,8 +276,3 @@ function openyabai {
     code .yabairc
 }
 
-function battemp() { 
-    
-    echo 'bc <<< "scale=3; `ioreg -r -n AppleSmartBattery | grep Temperature | cut -c23-`/100*1.8+32" ; }' >> ~/.zshrc && source
-
-}bc <<< "scale=3; `ioreg -r -n AppleSmartBattery | grep Temperature | cut -c23-`/100*1.8+32" ; }
