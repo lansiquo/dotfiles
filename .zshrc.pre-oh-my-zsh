@@ -1,0 +1,131 @@
+plugins=(git colored-man-pages colorize pip python brew osx)
+
+# Change
+
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home"
+
+
+#flush local DNS
+alias flushdns="sudo killall -HUP mDNSResponder; say dns cleared successfully"
+
+#change
+
+#whats my external ip
+alias ip="curl ipecho.net/plain ; echo"
+
+#pyWhat
+alias what="python /Users/robin/Development/breakables/pyWhat/pywhat/what.py"
+
+#serve jeykll localhost:4000
+alias serve="bundle exec jekyll serve --livereload"
+
+
+alias openrc="code ~/.zshrc" #opens current main config file 
+alias loadrc="source ~/.zshrc" #source main config file
+
+#show PID of localhost:8080
+alias 8080="lsof -n -i4TCP:8080"
+
+
+#yardlights
+alias yardon="curl -i -s -k -X $'POST' \
+    -H $'Host: iot.meross.com' -H $'Content-Type: application/json' -H $'Accept: */*' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: 
+close' -H $'AppVersion: 1.0' -H $'User-Agent: MerossWidget/1.0 (iPhone; iOS 14.2; Scale/3.00)' -H $'Accept-Language: en-CA;q=1' -H 
+$'Authorization: Basic 82e6f7a80579e43e8bab4e86e7e256200b66c3ad95e1f190353c1c0a4003f159' -H $'Content-Length: 555' \
+    --data-binary 
+$'{\"nonce\":\"ryxvdjvmncyaspgk\",\"timestamp\":\"1609708298\",\"sign\":\"6550c78e29646e4c28f0fc71656fc53e\",\"params\":\"ewogICJldmVudCIgOiB7CiAgICAiZXZlbnRUeXBlIiA6ICJERVZJQ0VfRVZFTlQiLAogICAgImV2ZW50RGF0YSIgOiB7CiAgICAgICIxNzEyMjEyNTc0OTI5NDI1MTMxMzM0Mjk4ZjEwYThkYiIgOiBbCiAgICAgICAgewogICAgICAgICAgIm5hbWVzcGFjZSIgOiAiQXBwbGlhbmNlLkNvbnRyb2wuVG9nZ2xlIiwKICAgICAgICAgICJtZXRob2QiIDogIlNFVCIsCiAgICAgICAgICAicGF5bG9hZCIgOiB7CiAgICAgICAgICAgICJ0b2dnbGUiIDogewogICAgICAgICAgICAgICJvbm9mZiIgOiAxCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIF0KICAgIH0KICB9Cn0=\"}' 
+\
+    $'https://iot.meross.com/v1/mqtt/event'"
+    
+alias yardoff="curl -i -s -k -X $'POST' \
+    -H $'Host: iot.meross.com' -H $'Content-Type: application/json' -H $'Accept: */*' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: 
+close' -H $'AppVersion: 1.0' -H $'User-Agent: MerossWidget/1.0 (iPhone; iOS 14.2; Scale/3.00)' -H $'Accept-Language: en-CA;q=1' -H 
+$'Authorization: Basic 82e6f7a80579e43e8bab4e86e7e256200b66c3ad95e1f190353c1c0a4003f159' -H $'Content-Length: 555' \
+    --data-binary 
+$'{\"nonce\":\"vcujhkafsjmgyzfd\",\"timestamp\":\"1609712713\",\"sign\":\"92db12aa453206c4948c5633be6d74fe\",\"params\":\"ewogICJldmVudCIgOiB7CiAgICAiZXZlbnRUeXBlIiA6ICJERVZJQ0VfRVZFTlQiLAogICAgImV2ZW50RGF0YSIgOiB7CiAgICAgICIxNzEyMjEyNTc0OTI5NDI1MTMxMzM0Mjk4ZjEwYThkYiIgOiBbCiAgICAgICAgewogICAgICAgICAgIm5hbWVzcGFjZSIgOiAiQXBwbGlhbmNlLkNvbnRyb2wuVG9nZ2xlIiwKICAgICAgICAgICJtZXRob2QiIDogIlNFVCIsCiAgICAgICAgICAicGF5bG9hZCIgOiB7CiAgICAgICAgICAgICJ0b2dnbGUiIDogewogICAgICAgICAgICAgICJvbm9mZiIgOiAwCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIF0KICAgIH0KICB9Cn0=\"}' 
+\
+    $'https://iot.meross.com/v1/mqtt/event'"
+
+#Local servers
+#Updated 18/06/20
+alias tp="ssh robin@192.168.2.74"
+alias oldmb="ssh robinlansiquot@192.168.2.152"
+alias gearbotmy:sql="/usr/local/mysql/bin/mysql -u root -p"
+alias python="python3"
+
+#Manage yabai (windows manager)
+alias ry="brew services restart yabai"
+alias stopy="brew services stop yabai"
+alias starty="brew services start yabai"
+
+#Open iCloud from terminal
+alias cloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/" 
+
+alias opengearbot="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/gearbot"
+alias openapi="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/robinsProjects/WI_API"
+
+function update1(){
+    python /Users/robinlansiquot/Library/Mobile Documents/com~apple~CloudDocs/Robin/Development/scripts/update_daily.py
+    python /Users/robinlansiquot/Library/Mobile Documents/com~apple~CloudDocs/Robin/Development/scripts/update_daily.py
+}
+  
+#open person website in visual studio code
+function ow() {
+    cd ~
+    cd Development
+    code lansiquo.github.io
+    }
+
+#update yabai payload
+function updatescript { 
+sudo yabai --uninstall-sa
+sudo yabai --install-sa
+}
+
+#Open files in VS Code with the alias code
+function code {
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        local argPath="$1"
+        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+        open -a "Visual Studio Code" "$argPath"
+    fi
+}
+
+#Stop yabai, update yabai, restart yabai
+function updateyabai {
+    brew services stop yabai
+    brew upgrade yabai
+    brew services start yabai   
+}
+
+#Allow for moving spacees
+function yscript {
+    sudo yabai --load-sa
+    yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+}
+
+#simple git push
+function push {
+    git add .
+    git commit -m "$1"
+    git push
+}
+
+#ssh into ec2 instance
+function ec2 {
+    cd ~ 
+    cd Downloads
+    ssh -i "Keypair.pem" ec2-user@ec2-18-217-148-146.us-east-2.compute.amazonaws.com
+}
+
+function openyabai {
+    code /Users/robin/.yabairc
+}
+
+function what() {
+    python /Users/robin/Development/breakables/pyWhat/pywhat/what.py $1
+}
+
